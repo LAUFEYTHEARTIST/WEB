@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAUFEY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Variables de color */
+        :root {
+            --background: #f8f5f2;
+            --text: #1a1a1a;
+            --accent: #9d8275;
+            --white: #ffffff;
+        }
+        
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        /* Encabezado y Navegación */
+        header {
+            background: rgba(251, 251, 250, 0.95);
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 2rem;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            padding-top: 1rem;
+        }
+
+        .nav-menu a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--accent);
+        }
+
+        /* Sección Hero */
+         .hero {
+         height: 100vh;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         background: url(_\ \(45\).jpeg) center/cover no-repeat;
+         background-attachment: fixed;
+         background-position: center 20%; /* Ajusta el segundo valor (20%) para bajar la imagen */
+         color: var(--white);
+         text-align: center;
+        }
+        /* Botón */
+        .btn {
+            padding: 1rem 2rem;
+            border: 1px solid var(--white);
+            text-transform: uppercase;
+            margin-top: 1rem;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        /* Contenedores */
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .album, .tour-date {
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem;
+            text-align: center;
+            background: var(--text);
+            color: var(grey);
+        }
+
+        .social-links a {
+            margin: 0 1rem;
+            color: var(--white);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">LAUFEY</a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="segunda.html">Música</a></li>
+                <li><a href="primera.html">Historia </a></li>
+                <li><a href="index.html">Newsletter</a></li>
+                <li><a href="https://shopworld.laufeymusic.com/">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>LAUFEY</h1>
+        <p>Bewitched - Nuevo Álbum</p>
+        <a href="https://open.spotify.com/intl-es/artist/7gW0r5CkdEUMm42w9XpyZO" class="btn btn-light" target="_blank">Escuchar Ahora</a>
+
+        
+    </section>
+
+    <section id="music">
+        <h2>Música</h2>
+        <div class="album">
+            <h3>Santa baby</h3>
+            <p>2024</p>
+            <h3>Bewitched</h3>
+            <p>2023</p>
+            <h3>Everything I Know About Love</h3>
+            <p>2022</p>
+        </div>
+
+    </section>
+
+    <section id="newsletter">
+        <h2>Únete al Newsletter</h2>
+        <form>
+            <input type="email" placeholder="Tu correo electrónico">
+            <button type="submit" class="btn">Suscribirse</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Spotify</a>
+            <a href="#">YouTube</a>
+        </div>
+        <p>&copy; 2024 Laufey. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
